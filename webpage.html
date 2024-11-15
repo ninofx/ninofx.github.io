@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Left Side and Scrollable Right Side</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            background-color: #ffffff; /* Set the background color to white */
+        }
+        .left {
+            width: 25%;
+            background-color: #f0f0f0; /* Light grey background for contrast */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+        }
+        .left img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .left h1 {
+            text-align: center;
+            margin: 0;
+        }
+        .separator {
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+        .right {
+            width: 75%;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #ffffff; /* Right part remains white */
+        }
+        .content {
+            height: 1500px; /* For demo purposes, to enable scrolling */
+        }
+        .links {
+            margin-top: 20px;
+            text-align: left; /* Align links to the left */
+        }
+        .links a {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #007BFF; /* Link color */
+        }
+        .links img {
+            width: 20px; /* Set icon size */
+            height: 20px;
+            margin-right: 8px; /* Space between icon and text */
+        }
+        .inspiration {
+            margin-top: 20px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left">
+        <h1>Antonino Flachi</h1>
+        <div class="separator"></div>
+        <img src="your-photo.jpg" alt="Your Photo">
+        
+        <div class="links">
+            <a href="mailto:your-email@example.com">
+                <img src="email-icon.png" alt="Email Icon">Email Me
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="github-icon.png" alt="GitHub Icon">GitHub
+            </a>
+            <a href="https://scholar.google.com/citations?user=wmsnYqoAAAAJ&hl=en&oi=ao" target="_blank">
+                <img src="scholar-icon.png" alt="Google Scholar Icon">Google Scholar
+            </a>
+        </div>
+
+        <div class="inspiration">
+            <p>"Life is a mixture of magic and pasta." – Federico Fellini</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="content">
+            <p>Scrollable content goes here.</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+            <p>More content...</p>
+        </div>
+    </div>
+
+</body>
+</html>
