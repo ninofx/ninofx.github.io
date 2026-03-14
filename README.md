@@ -1,2 +1,2 @@
-my webpage -- in progress
+my webpage -- The webpage is in progress.
 
